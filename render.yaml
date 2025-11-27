@@ -2,6 +2,6 @@ services:
   - type: web
     name: yt-fake-detector-api
     env: python
-    buildCommand: PIP_NO_BUILD_ISOLATION=0 pip install --upgrade pip && pip install --no-build-isolation -r requirements.txt
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
     startCommand: gunicorn app:app
     plan: free
