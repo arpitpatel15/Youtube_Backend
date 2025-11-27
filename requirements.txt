@@ -1,4 +1,4 @@
-setuptools
+setuptools>=65
 wheel
 protobuf==3.20.*
 
@@ -6,7 +6,7 @@ gunicorn
 flask
 joblib
 pandas
-numpy
+numpy==1.24.4
 scikit-learn==1.1.3
 google-api-python-client
 google-auth
