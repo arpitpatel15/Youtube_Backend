@@ -2,10 +2,9 @@ from flask import Flask, request, jsonify
 import joblib
 import os
 from detector_api import (
-    predict_video_from_url
+    predict_video_from_url,MODEL_PATH
 )
 app = Flask(__name__)
-MODEL_PATH = 'enhanced_fake_video_detector.joblib'
 if not os.path.exists(MODEL_PATH):
     raise FileNotFoundError(f"Model file not found: {MODEL_PATH}")
 model = joblib.load(MODEL_PATH)
