@@ -42,7 +42,7 @@ else:
 @app.route("/", methods=["GET"])
 def home():
     return jsonify({
-        "message": "🤖 YouTube Fake Video Detector API is running!",
+        "message": "YouTube Fake Video Detector API is running!",
         "usage": {
             "POST /predict": {
                 "url": "YouTube video link"
