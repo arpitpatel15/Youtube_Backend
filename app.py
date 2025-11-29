@@ -1,11 +1,15 @@
 from flask import Flask, request, jsonify
 import joblib
+from flask_cors import CORS
 import os
 import numpy as np
 from detector_api import predict_video_from_url, MODEL_PATH
 
 app = Flask(__name__)
-
+CORS(app, resources={r"/*": {"origins": [
+    "https://www.youtube.com",
+    "chrome-extension://*"
+]}})
 # ------------------------------
 #  SAFE JSON CONVERSION FUNCTIONS
 # ------------------------------
