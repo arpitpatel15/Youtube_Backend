@@ -49,7 +49,7 @@ except ImportError:
         return 0
 
 # ========= ENHANCED USER CONFIG =========
-API_KEY = "AIzaSyCZ3_29H0OqdqkVQUZdBLMBfztg-KB_yR4"  # Your YouTube API key
+API_KEY = "AIzaSyAr7oY3zlpK2ChaOfvGo5LyJ53f4vGbEUM"  # Your YouTube API key
 MODEL_PATH = "enhanced_fake_video_detector.joblib"
 TEXT_MAX_WORD_FEATURES = 20000
 TEXT_MAX_CHAR_FEATURES = 12000
